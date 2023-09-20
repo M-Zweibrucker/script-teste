@@ -1,0 +1,20 @@
+{
+  "name": "estagio",
+  "type":"module",
+  "version": "1.0.0",
+  "description": "- [ ] Ser desenvolvido em JAVASCRIPT utilizando NODEJS.\r - [ ] Ser capaz de ler os dados coletados pelo comerciante que estão registrados\r em um arquivo CSV.\r - [ ] Utilizar uma API de histórico e previsão do tempo.\r - [ ] Extrair os seguintes dados da API:\r     [ ] A temperatura mínima e máxima registrada.\r     [ ] A velocidade máxima das rajadas de vento.\r     [ ] A porcentagem de cobertura de nuvens no céu.\r - [ ] Escrever dois arquivos:\r     [ ] Arquivo CSV contendo os dados coletados pelo comerciante, contendo\r       três colunas em anexo contendo as informações extraídas da API para\r       cada um dos respectivos dias.\r     [ ] Arquivo JSON contendo os seguintes dados:\r [ ] Média de faturamento.\r [ ] Dia de maior faturamento.\r [ ] Dia de menor faturamento.\r [ ] Valor do dia de maior faturamento.\r [ ] Valor do dia de menor faturamento.\r Ao final do documento estará em anexo uma tabela contendo os valores de\r referência dos produtos oferecidos pelo comerciante e seus respectivos valores.",
+  "main": "script.js",
+  "scripts": {
+    "write:data": "node src/write-data-file.js",
+    "api": "node src/get-data-api.js",
+    "read": "node src/read-file.js",
+    "write:json": "node src/write-json.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.5.0",
+    "csv-parser": "^3.0.0"
+  }
+}
